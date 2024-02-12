@@ -3,7 +3,7 @@ import { Text, View, StatusBar, FlatList, Image, TouchableOpacity} from 'react-n
 import { Card, SearchBar } from '@rneui/themed'
 import SafeAreaView from 'react-native-safe-area-view'
 import AsyncStorage from '@react-native-async-storage/async-storage'
-
+import Header from '../../components/header'
 import config from '../../config.json'
 
 const SearchPage = ({navigation}) => {
@@ -65,7 +65,7 @@ const SearchPage = ({navigation}) => {
       <StatusBar
         backgroundColor={config.THEME_COLORS.PRIMARY}
       />
-      
+      <Header />
       {/*2. Membuat kotak pencarian */}
       <SearchBar lightTheme
         placeholder="Type Here..."        
