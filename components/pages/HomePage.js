@@ -10,7 +10,7 @@ import {
 import { Card } from "@rneui/themed";
 import SafeAreaView from "react-native-safe-area-view";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import Header from '../../components/header'
+import Header from "../../components/header";
 // import Slider from '../../components/slider'
 import config from "../../config.json";
 
@@ -69,7 +69,7 @@ const HomePage = ({ navigation }) => {
       <StatusBar backgroundColor={config.THEME_COLORS.PRIMARY} />
 
       <Header />
-      {/* <Slider/> */}
+      <Slider/>
       {/*5. menampilkan produk dengan FlatList dalam 2 kolom */}
       <FlatList
         data={product}

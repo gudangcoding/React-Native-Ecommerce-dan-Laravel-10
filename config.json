@@ -1,7 +1,7 @@
 {
     "SERVER_URL": "https://ionic-commerce.app/api/",
     "THEME_COLORS": {
-        "PRIMARY": "#fe4735",
+        "PRIMARY": "green",
         "SECONDARY": "#bf360c"
     }
 }

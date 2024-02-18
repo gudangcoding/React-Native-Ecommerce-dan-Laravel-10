@@ -5,11 +5,12 @@ import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { ThemeProvider, createTheme } from '@rneui/themed'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 
+import DetailPage from './components/Pages/DetailPage'
 import TabPage from './components/pages/TabPage'
 import LoginPage from './components/auth/LoginPage'
-import DetailPage from './components/Pages/DetailPage'
 import RegisterPage from './components/Auth/RegisterPage'
 import config from './config.json'
+
 const token = AsyncStorage.getItem('token');
 
 const Stack = createNativeStackNavigator()

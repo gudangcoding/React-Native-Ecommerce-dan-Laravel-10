@@ -15,6 +15,7 @@ import UserPage from './UserPage'
 const TabPage = () => {
   return (
     <SafeAreaProvider>
+    
       <Tab.Navigator screenOptions={({ route }) => ({
           tabBarIcon: ({  color, size }) => {
             let iconName
@@ -26,14 +27,14 @@ const TabPage = () => {
 
             return <FontAwesome name={iconName} size={size} color={color} />
           },
-          // headerStyle: { backgroundColor: config.THEME_COLORS.PRIMARY },
+          headerStyle: { backgroundColor: config.THEME_COLORS.PRIMARY },
           headerTintColor: '#fff',
-          // tabBarActiveTintColor: config.THEME_COLORS.PRIMARY,
-          // tabBarInactiveTintColor: config.THEME_COLORS.SECONDARY,
+          tabBarActiveTintColor: config.THEME_COLORS.PRIMARY,
+          tabBarInactiveTintColor: config.THEME_COLORS.SECONDARY,
           headerShown: false
         })}
       >
-          <Tab.Screen name="Home" component={HomePage}/>
+          <Tab.Screen name="Home" component={HomePage} />
           <Tab.Screen name="Search" component={SearchPage} />
           <Tab.Screen name="Cart" component={CartPage} options={{headerShown: true}}/>
           <Tab.Screen name="User Profile" component={UserPage} options={{headerShown: true}}/>
